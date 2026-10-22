@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 - Hiệu ứng hình ảnh</title>
+    <link rel="stylesheet" href="bai20.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="card-box">
+            <img id="effectImage" src="hoahong.gif" alt="Hoa hồng">
+            <div class="card-title">Special For You</div>
+        </div>
+
+        <div class="button-bar">
+            <button class="btn active" onclick="applyEffect('gray', this)">Gray</button>
+            <button class="btn" onclick="applyEffect('xray', this)">Xray</button>
+            <button class="btn" onclick="applyEffect('invert', this)">Invert</button>
+            <button class="btn" onclick="applyEffect('fliph', this)">FlipH</button>
+            <button class="btn" onclick="applyEffect('flipv', this)">FlipV</button>
+            <button class="btn" onclick="applyEffect('glow', this)">Glow</button>
+            <button class="btn" onclick="applyEffect('shadow', this)">Shadow</button>
+            <button class="btn" onclick="applyEffect('boldshadow', this)">Bold Shadow</button>
+            <button class="btn" onclick="applyEffect('dropshadow', this)">DropShadow</button>
+            <button class="btn" onclick="applyEffect('blur', this)">Blur</button>
+            <button class="btn" onclick="applyEffect('wave', this)">Wave</button>
+            <button class="btn" onclick="applyEffect('mask', this)">Mask</button>
+            <button class="btn" onclick="applyEffect('alpha', this)">Alpha</button>
+        </div>
+    </div>
+
+    <svg style="display: none;">
+        <filter id="waveFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="2" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <script src="bai20.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #e2e8f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contact-form {
+    background-color: #ffffff; 
+    max-width: 650px;
+    width: 100%;
+    border-radius: 12px; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.form-header {
+    background-color: #0f766e;
+    color: #ffffff; 
+    padding: 24px 28px;
+}
+
+.form-header h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.form-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.form-body {
+    padding: 28px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #334155; 
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1; 
+    border-radius: 6px;
+    font-size: 14px;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0f766e;
+}
+
+.form-group.full-width {
+    margin-bottom: 18px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.checkbox-group label {
+    font-size: 13px;
+    color: #334155;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+.btn-submit {
+    background-color: #0f766e;
+    color: #ffffff;
+}
+.btn-reset {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+@media (max-width: 500px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

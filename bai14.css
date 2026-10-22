@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+}
+.main-container {
+    max-width: 950px;
+    width: 100%;
+}
+.page-title-banner {
+    background-color: #2E7D32;
+    color: #FFEB3B;
+    text-align: center;
+    padding: 18px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.page-title-banner h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.intro-text {
+    color: #1b5e20;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+}
+.wonders-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.wonder-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.wonder-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 3px solid #2E7D32;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.wonder-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+.wonder-content h2 {
+    color: #1b5e20;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wonder-content p {
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.4;
+}
+@media (max-width: 768px) {
+    .wonders-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .wonders-grid {
+        grid-template-columns: 1fr;
+    }
+}

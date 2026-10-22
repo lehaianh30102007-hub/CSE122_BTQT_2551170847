@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 40px 0;
+    color: #333333;
+}
+
+/* Khung bọc toàn bộ nội dung chính (giống khung xám trắng có đổ bóng trong hình) */
+.main-wrapper {
+    width: 750px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Dải tiêu đề chính: Nền đỏ đậm #C8102E, chữ trắng, căn giữa */
+.header-bar {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 14px 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Dải tiêu đề phụ: Nền hồng nhạt #FBE3E8, chữ đỏ đậm, in đậm, căn giữa */
+.sub-header-bar {
+    background-color: #FBE3E8;
+    color: #C8102E;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Phần thân chứa nội dung */
+.content-body {
+    padding: 25px 30px;
+    position: relative;
+    overflow: hidden; /* Clearfix để ôm trọn các khối float */
+}
+
+/* Cột bên trái (Cách thức nhận giải) */
+.left-col {
+    float: left;
+    width: 48%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    border-right: 1px solid #dcdcdc; /* Vạch phân cách dọc */
+}
+
+/* Cột bên phải (Sản phẩm khuyến mãi & Đối tượng tham gia) */
+.right-col {
+    float: right;
+    width: 48%;
+    padding-left: 3%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Tiêu đề các mục: Chữ màu đỏ #C8102E, có ký hiệu ô vuông */
+.content-body h3 {
+    color: #C8102E;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Định dạng danh sách liệt kê */
+.content-body ul {
+    list-style-type: none; /* Ẩn dấu chấm mặc định */
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.content-body li {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+/* Định dạng hình ảnh sản phẩm nằm ở góc phải bên trên */
+.product-img {
+    float: right;
+    width: 140px;
+    height: auto;
+    margin-left: 12px;
+    margin-bottom: 5px;
+}

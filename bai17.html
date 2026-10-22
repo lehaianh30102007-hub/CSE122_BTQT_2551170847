@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17 - Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="bai17.css">
+</head>
+<body>
+    <form id="registerForm" class="register-form" novalidate>
+        <div class="form-header">
+            <h2>Đăng ký tài khoản</h2>
+            <p>Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+        </div>
+        <div class="form-group" id="groupFullname">
+            <label for="fullname">Họ và tên</label>
+            <input type="text" id="fullname" placeholder="Nguyễn Văn An">
+            <small class="msg-box"></small>
+        </div>
+        <div class="form-group" id="groupEmail">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="an.nv@tlu.edu.vn">
+            <small class="msg-box"></small>
+        </div>
+        <div class="form-group" id="groupPassword">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="••••••">
+            <small class="msg-box"></small>
+        </div>
+        <div class="form-group" id="groupConfirmPassword">
+            <label for="confirmPassword">Xác nhận mật khẩu</label>
+            <input type="password" id="confirmPassword" placeholder="••••••">
+            <small class="msg-box"></small>
+        </div>
+        <button type="submit" class="btn-submit">Đăng ký</button>
+    </form>
+    <script src="bai17.js"></script>
+</body>
+</html>

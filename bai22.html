@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 22 - Chế độ Tối / Sáng</title>
+    <link rel="stylesheet" href="bai22.css">
+</head>
+<body class="toi">
+    <div class="app-container">
+        <header class="app-header">
+            <h1 class="main-title">Chế độ Tối / Sáng</h1>
+            
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+        <div class="info-card">
+            <h2 class="card-title">Biến CSS (CSS Variables)</h2>
+            <p class="card-desc">Toàn bộ màu sắc được khai báo trong :root và ghi đè bằng class .toi.</p>
+        </div>
+        <div class="info-card">
+            <h2 class="card-title">Chuyển đổi bằng JavaScript</h2>
+            <p class="card-desc">Nút gạt thêm/bỏ class .toi trên &lt;body&gt; — mọi thành phần tự đổi màu.</p>
+        </div>
+        <div class="info-card">
+            <h2 class="card-title">Chuyển màu mượt</h2>
+            <p class="card-desc">Dùng transition để màu nền và chữ chuyển dần, không bị giật.</p>
+        </div>
+        <footer class="app-footer">
+            <p id="statusText">Đây là giao diện ở chế độ TỐI (đang bật).</p>
+        </footer>
+    </div>
+    <script src="bai22js"></script>
+</body>
+</html>

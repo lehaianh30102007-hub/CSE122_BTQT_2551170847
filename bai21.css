@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.page-container {
+    max-width: 1050px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.banner {
+    background-color: #C62828;
+    background-image: url('Nen_banner.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 15px;
+}
+
+.banner-logo {
+    height: 40px;
+    object-fit: contain;
+}
+
+.banner-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main-layout {
+    display: flex;
+    min-height: 500px;
+}
+
+.sidebar-menu {
+    width: 200px;
+    background: linear-gradient(180deg, #C62828 0%, #8E0000 100%);
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+}
+
+.sidebar-menu li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 13px;
+    line-height: 1.4;
+    transition: background 0.2s;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.content-area {
+    flex: 1;
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+.content-header h2 {
+    color: #C62828;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.sub-menu-box {
+    background-color: #FFE082;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sub-menu-box a {
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.sub-menu-box a:hover {
+    text-decoration: underline;
+}
+
+.content-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content-box p {
+    color: #334155;
+    font-size: 14px;
+}
+
+.highlight-text {
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.ads-column {
+    width: 160px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.ads-column img {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+    .sidebar-menu, .ads-column {
+        width: 100%;
+    }
+}

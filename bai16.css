@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.todo-app {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+.app-header {
+    background-color: #6d28d9;
+    color: #ffffff;
+    padding: 28px 32px;
+}
+
+.app-header h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.app-header p {
+    font-size: 14px;
+    opacity: 0.85;
+}
+.input-section {
+    padding: 24px 32px 16px 32px;
+    display: flex;
+    gap: 12px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.input-section input:focus {
+    border-color: #6d28d9;
+}
+.btn-add {
+    background-color: #6d28d9;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-add:hover {
+    opacity: 0.9;
+}
+.todo-list {
+    list-style: none;
+    padding: 0 32px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px dashed #ede9fe;
+    gap: 14px;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a78bfa;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 15px;
+    color: #1e293b;
+    cursor: pointer;
+    user-select: none;
+}
+.todo-item.completed .task-text {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+.todo-item.completed .custom-checkbox {
+    background-color: #6d28d9;
+    border-color: #6d28d9;
+}
+.btn-delete {
+    background-color: #fde2e2;
+    color: #b91c1c;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #fca5a5;
+}
+.app-footer {
+    padding: 20px 32px;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+}

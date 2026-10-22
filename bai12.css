@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url('Anh/Bai12/Nen.gif');
+    background-repeat: repeat;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.main-container {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.calendar-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;    
+    border-radius: 12px;       
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-year {
+    color: #C62828;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calendar-day {
+    color: #C62828;
+    font-size: 90px;          
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 10px 0;
+}
+.calendar-month {
+    color: #1565C0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.calendar-weekday {
+    color: #1565C0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.greeting-text {
+    color: #C62828;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.input-form-box {
+    background-color: #ffffff;
+    border: 2px solid #1565C0; 
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #334155;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #1565C0;
+}
+.btn-print {
+    background-color: #546e7a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+    align-self: flex-end;
+}
+
+.btn-print:hover {
+    background-color: #455a64;
+}

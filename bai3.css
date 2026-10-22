@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #7ec8e3, #0a5c8a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 2. Tiêu đề: chữ #0b3d5c, in đậm, căn giữa */
+h1 {
+    color: #0b3d5c;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* 3. Khối mở đầu: nền #0b3d5c, chữ #FFFFFF, in nghiêng, bo góc */
+.intro-box {
+    background-color: #0b3d5c;
+    color: #ffffff;
+    font-style: italic;
+    padding: 18px 25px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Khung bao bọc phần nội dung thân và ảnh */
+.content-body {
+    color: #333333;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* 4. Ảnh minh hoạ: chèn nổi bên phải (float: right), bo góc 8px */
+.img-ha-long {
+    float: right;
+    width: 260px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* 5. Đoạn thân: căn đều (text-align: justify) */
+.content-body p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* 6. Chữ cái đầu (Drop Cap): ::first-letter màu #0b3d5c, in đậm, kích thước lớn */
+.content-body p::first-letter {
+    font-size: 3.2em;
+    float: left;
+    line-height: 0.8;
+    padding-right: 6px;
+    padding-top: 4px;
+    font-weight: bold;
+    color: #0b3d5c;
+    font-family: Georgia, serif;
+}
+
+/* Clearfix giúp ôm trọn phần float */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
